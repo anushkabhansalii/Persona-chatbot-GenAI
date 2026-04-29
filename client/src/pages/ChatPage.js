@@ -2,7 +2,9 @@ import React, { useState, useRef, useEffect } from 'react';
 import ChatBox from '../components/ChatBox';
 import SuggestionChips from '../components/SuggestionChips';
 
-const API_URL = 'http://localhost:5001/chat';
+const API_URL = process.env.NODE_ENV === 'production' 
+  ? '/chat' 
+  : 'http://localhost:5001/chat';
 
 const personaNames = {
   anshuman: "Anshuman Singh",

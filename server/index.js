@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const personas = require('./personas');
 
@@ -52,6 +53,14 @@ app.post('/chat', async (req, res) => {
     console.error("Chat Error:", error);
     res.status(500).json({ error: error.message || "An error occurred while communicating with the AI." });
   }
+});
+
+// Serve static files from React build folder
+app.use(express.static(path.join(__dirname, '../client/build')));
+
+// Catch-all route to serve React's index.html
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
 });
 
 app.listen(PORT, () => {
