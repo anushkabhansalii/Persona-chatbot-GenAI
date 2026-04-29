@@ -79,4 +79,4 @@ Open your browser and navigate to \`http://localhost:3000\`. You can now select 
 
 ## Deployment
 - **Backend:** [https://persona-chatbot-genai-8p1y.onrender.com](https://persona-chatbot-genai-8p1y.onrender.com) (Hosted on Render)
-- **Frontend:** *(Add your live deployed link here once hosted on Vercel/Netlify)*
+- **Frontend:** [https://persona-chatbot-gen-ai.vercel.app/](https://persona-chatbot-gen-ai.vercel.app/) (Hosted on Vercel)
