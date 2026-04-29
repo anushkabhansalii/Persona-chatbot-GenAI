@@ -78,4 +78,5 @@ cd GenAi-Project1
 Open your browser and navigate to \`http://localhost:3000\`. You can now select a persona and start chatting!
 
 ## Deployment
-*(Add your live deployed link here once hosted on Vercel/Railway)*
+- **Backend:** [https://persona-chatbot-genai-8p1y.onrender.com](https://persona-chatbot-genai-8p1y.onrender.com) (Hosted on Render)
+- **Frontend:** *(Add your live deployed link here once hosted on Vercel/Netlify)*
